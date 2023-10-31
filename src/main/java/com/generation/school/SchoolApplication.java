@@ -1,13 +1,13 @@
-package com.generation.escola;
+package com.generation.school;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EscolaApplication {
+public class SchoolApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EscolaApplication.class, args);
+		SpringApplication.run(SchoolApplication.class, args);
 	}
 
 }

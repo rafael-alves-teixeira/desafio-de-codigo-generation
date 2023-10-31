@@ -1,5 +1,6 @@
 package com.generation.school.entities;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,6 +22,7 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@Schema(example = "Full Name")
 	@NotBlank(message = "It is necessary to inform the studend name!")
 	private String name;
 	
@@ -33,6 +35,7 @@ public class Student {
 	@NotNull(message = "Please, inform the grade for the second semester!")
 	private float secondSemesterGrade;
 	
+	@Schema(example = "Full Name")
 	@NotBlank(message = "It is necessary to inform the teacher name!")
 	private String teacherName;
 	
